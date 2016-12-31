@@ -3,6 +3,7 @@ MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
 body{
 	background-color: #e9edf2;/*--------------------couleur d'arrière plan*/
+	margin: 0;/*									marge ext du site à 0*/
 }
 a:link{
 	text-decoration: none;/*------------------------enlève le soulignement des liens*/
@@ -12,51 +13,65 @@ ul{
 	list-style: none;/*-----------------------------enlève les puces*/
 }
 header{
-	display: flex;
+	display: flex;/*--------------------------------modifie le comportement des box*/
+	padding: 10px;/*								marge intérieur de 10px (partout)*/
 }
 #gauche{
-	flex: 1 1 auto;
+	flex: 1 1 auto;/*-------------------------------pour partager l'espace égale avec d'autre box*/
 }
 #droite{
-	flex: 1 1 auto;
+	flex: 1 1 auto;/*-------------------------------pour partager l'espace égale avec d'autre box*/
 }
 .hamburger{
-	float: right;
+	float: right;/*---------------------------------objet flottant en haut à droite*/
 }
 #b1{
-	margin-right: 0;
-	background-color: #3093f7;
-	border: 1px solid black;
-	border-radius: 5px 0 0 5px;
+	margin-right: 0;/*------------------------------marge ext droite à 0*/
+	background-color: #3093f7;/*					couleur de fond*/
+	border: 1px solid black;/*----------------------bordure*/
+	border-radius: 5px 0 0 5px;/*					congé d'angle HG et BG de 5px*/
 }
 #b2{
-	margin-left: -6px;
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 0 5px 5px 0;
+	margin-left: -6px;/*----------------------------marge gauche -6, pour collé les buttons*/
+	background-color: white;/*						couleur de fond*/
+	border: 1px solid black;/*----------------------bordures*/
+	border-radius: 0 5px 5px 0;/*					congé d'angle HD et BD de 5px*/
 }
 #menu_bas{
-	text-align: center;
+	text-align: center;/*---------------------------centre le texte*/
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 nav{
-	background-color: #3f4655;
+	background-color: #3f4655;/*--------------------couleur de fond*/
+	display: flex;/*								change le comportement des box*/
+	flex-direction: column;/*-----------------------box en colomnes*/
+	text-align: center;/*							centre le texte*/
+
+}
+nav div{
+	border: 1px solid black;/*----------------------bordure*/
+	margin-top: -1px;/*								superpose les bordures */
+	margin-right: -1px;/*---------------------------superpose les bordures*/
+}
+nav div:hover{
+	background-color: #3b414f;/*--------------------change lacouleur de fond au survole de la souris*/
 }
 nav h3{
-	color: white;
+	color: white;/*---------------------------------couleur du texte*/
+	font-family: sans-serif;/*						police d'écriture*/
 }
 nav p{
-	color: white;
+	color: grey;/*----------------------------------couleur de texte*/
+	font-family: sans-serif;/*						police d'écriture*/
 }
 #imgfond{
-	position: absolute;
-	margin-left: auto;
-	width: 1500px;
+	position: absolute;/*---------------------------position par rapport au parent*/
+	width: 1500px;/*								taille del'image*/
 }
 h1{
-	font-family: sans-serif;
-	font-weight: lighter;
-	text-align: center;
+	font-family: sans-serif;/*----------------------police d'écriture*/
+	font-weight: lighter;/*							épaisseur du texte*/
+	text-align: center;/*---------------------------centre le texte*/
 }
 
 
