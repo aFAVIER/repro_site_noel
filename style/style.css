@@ -11,50 +11,122 @@ a:link{
 }
 ul{	
 	list-style: none;/*-----------------------------enlève les puces*/
+	z-index: 15;/*									place au dessus de tout*/
+	padding-left: 20px;/*---------------------------marge intgauche*/
+}
+li{
+	margin: 0;/*------------------------------------marge ext*/
+	font-family: sans-serif;/*						police d'écriture*/
+	font-size: 1.2em;/*-----------------------------taille de texte*/
+	padding-top: 10px;/*							marge int haut*/
+	color: black;/*---------------------------------couleur de texte*/
 }
 header{
 	display: flex;/*--------------------------------modifie le comportement des box*/
-	padding: 10px;/*								marge intérieur de 10px (partout)*/
+	padding: 18px;/*								marge intérieur de 10px (partout)*/
+	position: fixed;/*------------------------------fixe le header, toujours visible*/
+	z-index: 10;/*									toujours au premier plan*/
+	background-color: #e9edf2;/*--------------------couleur de fond*/
+	width: 100%;/*									prend la largeur de la page*/
+	margin-left: -20px;/*---------------------------marge ext gauche*/
 }
 #gauche{
 	flex: 1 1 auto;/*-------------------------------pour partager l'espace égale avec d'autre box*/
+	padding-left: 20px;/*							marge int gauche*/
 }
+
 #droite{
 	flex: 1 1 auto;/*-------------------------------pour partager l'espace égale avec d'autre box*/
+	margin-right: 20px;/*							margeext droite*/
+}
+#droite p{
+	cursor: pointer;/*------------------------------créer un pointer au survol*/
+	font-family: sans-serif;/*						police d'écriture*/
+	font-size: 1em;/*-------------------------------taille du texte*/
+	font-weight: bold;/*							texte plus gros*/
 }
 .hamburger{
 	float: right;/*---------------------------------objet flottant en haut à droite*/
+}
+.menu{
+	display: none;/*--------------------------------pour cacher le menu par défaut*/
+	position: absolute;/*							position par rapport au parent*/
+	background-color: #e9edf2;/*--------------------couleur de fond*/
+	margin-top: 50px;/*								marge ext du haut*/
+	width: 100%;/*----------------------------------largeur de page*/
+	margin-left: 0;/*								marge ext gauche*/
+	border-top: 1px solid #c6cace;/*----------------bordure haute*/
+}
+.show{
+	display: block;/*-------------------------------pour montrer le menu déroulant*/
 }
 #b1{
 	margin-right: 0;/*------------------------------marge ext droite à 0*/
 	background-color: #3093f7;/*					couleur de fond*/
 	border: 1px solid black;/*----------------------bordure*/
 	border-radius: 5px 0 0 5px;/*					congé d'angle HG et BG de 5px*/
+	color: white;/*---------------------------------couleur de texte*/
+	height: 30px;/*									hauteur*/
+	width: 120px;/*---------------------------------largeur*/
+	margin-top: 20px;/*								marge ext haut*/
 }
 #b2{
 	margin-left: -6px;/*----------------------------marge gauche -6, pour collé les buttons*/
 	background-color: white;/*						couleur de fond*/
 	border: 1px solid black;/*----------------------bordures*/
 	border-radius: 0 5px 5px 0;/*					congé d'angle HD et BD de 5px*/
+	height: 30px;/*---------------------------------hauteur*/
+	width: 100px;/*									largeur*/
+	margin-top: 20px;/*-----------------------------marge ext*/
 }
 #menu_bas{
-	text-align: center;/*---------------------------centre le texte*/
+	margin-top: 20px;/*-----------------------------marge ext*/
+	font-family: sans-serif;/*						police d'écriture*/
+	font-size: 1.3em;/*-----------------------------taille police*/
+	text-align: center;/*							centre le texte*/
 }
+.mb{
+	font-weight: lighter;/*-------------------------épaisseur de texte*/
+	padding-right: 10px;/*							marge int droite*/
+	padding-left: 10px;/*---------------------------marge int gauche */
+}
+
+
+
+
+
 /*-------------------------------------------------------------------------------------------------------------------------------*/
+content{
+	position: absolute;/*---------------------------position pour la page*/
+	margin-top: 120px;/*								pour le placement du content par rapport au header*/
+	z-index: 1;/*-----------------------------------position du content*/
+}
+h1{
+	font-family: sans-serif;/*----------------------police d'écriture*/
+	font-weight: lighter;/*							épaisseur du texte*/
+	text-align: center;/*---------------------------centre le texte*/
+	font-size: 2.5em;
+}
 nav{
 	background-color: #3f4655;/*--------------------couleur de fond*/
 	display: flex;/*								change le comportement des box*/
 	flex-direction: column;/*-----------------------box en colomnes*/
 	text-align: center;/*							centre le texte*/
-
 }
 nav div{
 	border: 1px solid black;/*----------------------bordure*/
 	margin-top: -1px;/*								superpose les bordures */
 	margin-right: -1px;/*---------------------------superpose les bordures*/
+
 }
 nav div:hover{
 	background-color: #3b414f;/*--------------------change lacouleur de fond au survole de la souris*/
+}
+nav .anim{
+	content: '';/*----------------------------------créer une box vide*/
+	border: 1px solid black;/*						bordures*/
+	width: 200px;/*---------------------------------largeur*/
+	height: 200px;/*								hauteur*/
 }
 nav h3{
 	color: white;/*---------------------------------couleur du texte*/
@@ -64,17 +136,36 @@ nav p{
 	color: grey;/*----------------------------------couleur de texte*/
 	font-family: sans-serif;/*						police d'écriture*/
 }
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
 #imgfond{
 	position: absolute;/*---------------------------position par rapport au parent*/
-	width: 1500px;/*								taille del'image*/
+	/*width: 1500px;/*								taille del'image*/
+
 }
-h1{
+#content h3{
+	text-align: justify;/*--------------------------justifier le texte*/
+	font-weight: lighter;/*							lettre plus fine*/
+	padding: 10px;/*--------------------------------marges int de 10px*/
+	font-size: 1.4em;/*								taille texte*/
+}
+#content button{
+	height: 50px;/*---------------------------------hauteur du bouton 50px*/
+	width: 300px;/*									largeur 300px*/
+	background-color: #3093f7;/*--------------------couleur de fond*/
+	color: white;/*									couleur de texte*/
+	font-size: 1.4em;/*-----------------------------taille de texte*/
+	border-radius: 10px;/*							congé des angles*/
+	border: 1px solid #202528;/*--------------------bordures*/
+}
+#but{
+	display: flex;/*--------------------------------positionnement des éléments*/
+	flex-direction: column;/*						position en colonne*/
+	align-items: center;/*--------------------------centrerles éléments*/
+}
+#but h4{
 	font-family: sans-serif;/*----------------------police d'écriture*/
 	font-weight: lighter;/*							épaisseur du texte*/
-	text-align: center;/*---------------------------centre le texte*/
 }
-
-
 /*----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----*/

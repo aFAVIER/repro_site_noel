@@ -16,8 +16,10 @@
 			</div>-->
 		</div>
 		<div id="droite">
-			<button class="hamburger">&#9776;MENU</button>
-			<div class="menu">
+			<p onclick="menuHamburger()" class="hamburger">&#9776;MENU</p>
+			<!--<button onclick="menuHamburger()" class="hamburger">&#9776;MENU</button>-->
+		</div>
+		<div id="dropDown" class="menu">
 				<ul>
 					<a href="#"><li>Features</li></a>
 					<a href="#"><li>Pricing</li></a>
@@ -34,12 +36,12 @@
 						<button id="b2">Sign In</button>
 					</div>
 					<div id="menu_bas">
-						<strong>Help & Support</strong>
-						<strong>Blog</strong>
-						<strong>Resources</strong>
+						<strong class="mb">Help & Support</strong>
+						<strong class="mb">Blog</strong>
+						<strong class="mb">Resources</strong>
 					</div>
 				</ul>
-			</div>
+			
 		<!--	<div class="head">
 				<strong>Help & Support</strong>
 				<strong>Blog</strong>
@@ -49,36 +51,44 @@
 				</div>-->
 		</div>
 	</header>
-	<h1>Powerful, yet simple project management tool</h1>
-	<nav>
-		<div>
-			<h3>Task Management</h3>
-			<p>Stay organized with an advanced to-do list and track your project.</p>
-		</div>
-		<div>
-			<h3>Team Collaboration</h3>
-			<p>Efficiently work together with your team to deliver top-notch results.</p>
-		</div>
-		<div>
-			<h3>Time Tracking</h3>
-			<p>Track every minute of your work and bill clients accordingly.</p>
-		</div>
-		<div>
-			<h3>Invoicing</h3>
-			<p>Easily issue invoices for your work, save time, and get paid.</p>
-		</div>
-	</nav>
-	<article>
-		<div id="content">
-			<h4>Active Collab helps your team stay organized when you outgrow email. <br> But it's so much more than that - with plenty of neat add-ons, it's a  <br> one-stop solution for all your business needs.</h4>
-			<button>Try it free for 30 days!</button>
-			<h5>No credit card required, unsubscribe at any time.</h5>
-		</div>
-		<div id="content1">
-			<img id="imgfond" src="img/fond.png">
-		</div>
+	<content>
+		<h1>Powerful, yet simple project management tool</h1>
+		<nav>
+			<div>
+				<div class="anim"></div>
+				<h3>Task Management</h3>
+				<p>Stay organized with an advanced to-do list and track your project.</p>
+			</div>
+			<div>
+				<div class="anim"></div>
+				<h3>Team Collaboration</h3>
+				<p>Efficiently work together with your team to deliver top-notch results.</p>
+			</div>
+			<div>
+				<div class="anim"></div>
+				<h3>Time Tracking</h3>
+				<p>Track every minute of your work and bill clients accordingly.</p>
+			</div>
+			<div>
+				<div class="anim"></div>
+				<h3>Invoicing</h3>
+				<p>Easily issue invoices for your work, save time, and get paid.</p>
+			</div>
+		</nav>
+		<article>
+			<div id="content">
+				<h3>Active Collab helps your team stay organized when you outgrow email. But it's so much more than that - with plenty of neat add-ons, it's a   one-stop solution for all your business needs.</h3>
+				<div id="but">
+					<button>Try it free for 30 days!</button>
+					<h4>No credit card required, unsubscribe at any time.</h4>
+				</div>
+			</div>
+			<div id="content1">
+				<img id="imgfond" src="img/fond.png">
+			</div>
 
-	</article>
-	<script type="text/javascript" rel="script/style.js"></script>
+		</article>
+	</content>
+	<script type="text/javascript" src="script/style.js"></script>
 </body>
 </html>
