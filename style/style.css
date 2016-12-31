@@ -1,0 +1,79 @@
+/*----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
+MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
+MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+body{
+	background-color: #e9edf2;/*--------------------couleur d'arrière plan*/
+}
+a:link{
+	text-decoration: none;/*------------------------enlève le soulignement des liens*/
+	color: black;/*									couleur noir pour les liens*/
+}
+ul{	
+	list-style: none;/*-----------------------------enlève les puces*/
+}
+header{
+	display: flex;
+}
+#gauche{
+	flex: 1 1 auto;
+}
+#droite{
+	flex: 1 1 auto;
+}
+.hamburger{
+	float: right;
+}
+#b1{
+	margin-right: 0;
+	background-color: #3093f7;
+	border: 1px solid black;
+	border-radius: 5px 0 0 5px;
+}
+#b2{
+	margin-left: -6px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 0 5px 5px 0;
+}
+#menu_bas{
+	text-align: center;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+nav{
+	background-color: #3f4655;
+}
+nav h3{
+	color: white;
+}
+nav p{
+	color: white;
+}
+#imgfond{
+	position: absolute;
+	margin-left: auto;
+	width: 1500px;
+}
+h1{
+	font-family: sans-serif;
+	font-weight: lighter;
+	text-align: center;
+}
+
+
+/*----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
+600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
+600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----*/
+@media (min-width: 600px){
+nav{
+	background-color: red;
+}
+
+
+
+/*---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----
+>1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----
+>1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----*/
+@media (min-width: 1024px){
+nav{
+	background-color: black;
+}
