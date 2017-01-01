@@ -117,11 +117,14 @@ nav div{
 	border: 1px solid black;/*----------------------bordure*/
 	margin-top: -1px;/*								superpose les bordures */
 	margin-right: -1px;/*---------------------------superpose les bordures*/
-
+	display: flex;/*								comportement des box*/
+	flex-direction: column;/*-----------------------mettre en colonne*/
+	align-items: center;/*							tout centrer*/
 }
 nav div:hover{
 	background-color: #3b414f;/*--------------------change lacouleur de fond au survole de la souris*/
-}
+
+	}
 nav .anim{
 	content: '';/*----------------------------------créer une box vide*/
 	border: 1px solid black;/*						bordures*/
@@ -143,7 +146,7 @@ nav p{
 
 }
 #content h3{
-	text-align: justify;/*--------------------------justifier le texte*/
+	text-align: center;/*--------------------------justifier le texte*/
 	font-weight: lighter;/*							lettre plus fine*/
 	padding: 10px;/*--------------------------------marges int de 10px*/
 	font-size: 1.4em;/*								taille texte*/
@@ -166,6 +169,17 @@ nav p{
 	font-family: sans-serif;/*----------------------police d'écriture*/
 	font-weight: lighter;/*							épaisseur du texte*/
 }
+
+
+
+
+
+
+
+
+
+
+
 /*----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----*/
