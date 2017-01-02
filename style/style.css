@@ -1,6 +1,9 @@
 /*----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----
 MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----MOBILE-FIRST----*/
+html{
+	overflow-x: hidden;/*---------------------------supp scroll bas*/
+}
 body{
 	background-color: #e9edf2;/*--------------------couleur d'arrière plan*/
 	margin: 0;/*									marge ext du site à 0*/
@@ -113,7 +116,7 @@ nav{
 	flex-direction: column;/*-----------------------box en colomnes*/
 	text-align: center;/*							centre le texte*/
 }
-nav div{
+nav .nav{
 	border: 1px solid black;/*----------------------bordure*/
 	margin-top: -1px;/*								superpose les bordures */
 	margin-right: -1px;/*---------------------------superpose les bordures*/
@@ -121,13 +124,13 @@ nav div{
 	flex-direction: column;/*-----------------------mettre en colonne*/
 	align-items: center;/*							tout centrer*/
 }
-nav div:hover{
+nav .nav:hover{
 	background-color: #3b414f;/*--------------------change lacouleur de fond au survole de la souris*/
 
 	}
 nav .anim{
 	content: '';/*----------------------------------créer une box vide*/
-	border: 1px solid black;/*						bordures*/
+	/*border: 1px solid black;/*						bordures*/
 	width: 200px;/*---------------------------------largeur*/
 	height: 200px;/*								hauteur*/
 }
@@ -173,26 +176,196 @@ nav p{
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
+#content1{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#img_ex{
+	width: 500px;
 
+}
 
+#imgfond{
+	z-index: -4;
+	position: absolute;
+	width: 1600px;
+}
 
+/*---------------------------------------------------------------------------------------*/
+#art_2 {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+#art_2 h2{
+	text-align: center;
+	font-weight: lighter;
+	font-family: sans-serif;
+	font-size: 2em;
+}
+#art_2 p{
+	font-size: 1.6em;
+}
+#art_2 .prix{
+	font-size: 1em;
+}
+#promo{
+	display: inline-flex;
+	justify-content: center;
+}
 
-
+#promo h3, #promo p{
+	text-align: center;
+}
+.promos{
+	padding: 5px;
+}
+#pro_1{
+	order: 1;
+	flex: 1 1 auto;
+}
+#pro_2{
+	order: 2;
+	flex: 1 1 auto;
+	border-left: 1px solid grey;
+}
+#pro_1 p, #pro_2 p{
+	font-size: 1em;
+}
+#pro_2 h3, #pro_1 h3{
+	font-family: sans-serif;
+	font-size: 1.4em;
+	font-weight: lighter;
+}
+#promo button{
+	color: white;
+	background-color: #3093f7;
+	border-radius: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	font-weight: bold;
+}
 
 /*----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----
 600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----600à1024----*/
 @media (min-width: 600px){
 nav{
-	background-color: red;
+	display: flex;
+	align-items: center;
 }
+.ecran_2{
+	display: flex;
 
+}
+.nav{
+	flex-direction: column;
+	border: none;
+}
+#nav1, #nav3{
+	border: none;
+	border-right: 1px solid black;
+}
+#nav2, #nav4{
+	border: none;
+}
+#nav1, #nav2, #nav3, #nav4{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/*#nav1{
+	order: 1;
+	flex: 1 1 auto;
+}
+#nav2{
+	order: 2;
+	flex: 1 1 auto;
+}
+#nav3{
+	order: 3;
+	flex: 1 1 auto;
+}
+#nav4{
+	order: 4;
+	flex: 1 1 auto;
+}*/
+}
 
 
 /*---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----
 >1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----
 >1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024---->1024----*/
 @media (min-width: 1024px){
+content{
+	right: 0;
+	left: 0;
+}
 nav{
-	background-color: black;
+	clear: all;
+	align-items: center;
+	/*background-color: green;*/
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: center;
+	padding-left: ;
+}
+.ecran_2{
+	/*display: flex;*/
+}
+#nav1, #nav2, #nav3, #nav4{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#nav1{
+	order: 1;
+	flex: 1 1 auto;
+	max-width: 300px;
+}
+#nav2{
+	order: 2;
+	border-right: 1px solid black;
+	max-width: 300px;
+}
+#nav2:hover, #nav3:hover, #nav4:hover{
+	border-left: 1px solid black;
+}
+
+#nav3{
+	order: 3;
+	max-width: 300px;
+}
+#nav4{
+	order: 4;
+	flex: 1 1 auto;
+	max-width: 300px;
+}
+/*------------------------------------------------------------*/
+article #content h3{
+	width: 600px;
+	text-align: center;
+}
+article #content{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+article{
+}
+
+/*-----------------------------------------------------------*/
+#content1{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#img_ex{
+	width: 900px;
+}
+#imgfond{
+	z-index: -4;
+	position: absolute;
+	width: 1600px;
+}
 }
