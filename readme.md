@@ -14,3 +14,8 @@ ANALYSE DU SITE
 - liens / boutons / ...
 
 --------------------------------
+ 
+ 
+ A FAIRE
+-------------------------------------
+-Mobile First
